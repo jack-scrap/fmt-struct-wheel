@@ -1,6 +1,6 @@
 CC=gcc
 
-EXEC=a.out
+EXEC=wheel
 
 BUILDDIR=build
 
