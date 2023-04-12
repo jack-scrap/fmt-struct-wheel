@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 
 const char wheel[2 * 2] = {
 	'-',
@@ -17,6 +18,8 @@ int main(int argc, char* argv[]) {
 
 		return 1;
 	}
+
+	printf("%c\n", wheel[time(NULL) % sizeof wheel / sizeof *wheel]);
 
 	return 0;
 }
