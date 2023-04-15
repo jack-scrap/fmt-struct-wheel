@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 		return 1;
 	}
 
-	printf("%c\n", wheel[time(NULL) % sizeof wheel / sizeof *wheel]);
+	printf("%c", wheel[time(NULL) % sizeof wheel / sizeof *wheel]);
 
 	return 0;
 }
