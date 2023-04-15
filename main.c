@@ -9,7 +9,7 @@ const char wheel[2 * 2] = {
 };
 
 void err(char* msg) {
-	printf("Error: %s\n", msg);
+	fprintf(stderr, "Error: %s\n", msg);
 }
 
 int main(int argc, char* argv[]) {
